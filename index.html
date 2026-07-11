@@ -1,0 +1,743 @@
+<!DOCTYPE html><html class="light" lang="en" dir="ltr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-i18n="page_title">Blue Wave Academy – Swimming Registration Form</title>
+<meta name="description" data-i18n-meta="tagline" content="Welcome to Blue Wave Academy Please fill in the following information. We will contact you shortly to confirm your registration.">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#001e2c",
+                    "on-primary-fixed": "#001c39",
+                    "secondary": "var(--secondary)",
+                    "surface-tint": "#0060ab",
+                    "error-container": "var(--error-container)",
+                    "tertiary": "var(--tertiary)",
+                    "on-primary": "var(--on-primary)",
+                    "on-secondary-container": "var(--on-secondary-container)",
+                    "surface-container-high": "var(--surface-container-high)",
+                    "on-primary-container": "var(--on-primary-container)",
+                    "inverse-surface": "var(--inverse-surface)",
+                    "tertiary-fixed-dim": "#82cfff",
+                    "error": "var(--error)",
+                    "on-tertiary": "var(--on-tertiary)",
+                    "on-tertiary-fixed-variant": "#004c6b",
+                    "primary": "var(--primary)",
+                    "tertiary-fixed": "#c6e7ff",
+                    "on-error-container": "var(--on-error-container)",
+                    "primary-container": "var(--primary-container)",
+                    "on-tertiary-container": "var(--on-tertiary-container)",
+                    "on-surface-variant": "var(--on-surface-variant)",
+                    "secondary-fixed": "#c4e7ff",
+                    "outline-variant": "var(--outline-variant)",
+                    "surface-container-lowest": "var(--surface-container-lowest)",
+                    "surface-bright": "var(--surface-bright)",
+                    "on-tertiary-fixed": "#001e2d",
+                    "on-background": "var(--on-background)",
+                    "surface-dim": "var(--surface-dim)",
+                    "surface-container-low": "var(--surface-container-low)",
+                    "outline": "var(--outline)",
+                    "background": "var(--background)",
+                    "surface-container": "var(--surface-container)",
+                    "tertiary-container": "var(--tertiary-container)",
+                    "secondary-container": "var(--secondary-container)",
+                    "on-surface": "var(--on-surface)",
+                    "surface-variant": "var(--surface-variant)",
+                    "on-primary-fixed-variant": "#004883",
+                    "on-secondary": "var(--on-secondary)",
+                    "inverse-primary": "var(--inverse-primary)",
+                    "surface": "var(--surface)",
+                    "secondary-fixed-dim": "#7bd0ff",
+                    "inverse-on-surface": "var(--inverse-on-surface)",
+                    "surface-container-highest": "var(--surface-container-highest)",
+                    "primary-fixed": "#d3e3ff",
+                    "on-error": "var(--on-error)",
+                    "primary-fixed-dim": "#a3c9ff",
+                    "on-secondary-fixed-variant": "#004c69"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "sm": "16px",
+                    "md": "24px",
+                    "base": "4px",
+                    "xs": "8px",
+                    "margin-mobile": "20px",
+                    "xl": "80px"
+            },
+            "fontFamily": {
+                    "label-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}],
+                    "display-lg-mobile": ["36px", {"lineHeight": "42px", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      :root {
+        --primary: #005396;
+        --on-primary: #ffffff;
+        --primary-container: #0f6cbd;
+        --on-primary-container: #e3ecff;
+        --secondary: #00668a;
+        --on-secondary: #ffffff;
+        --secondary-container: #40c2fd;
+        --on-secondary-container: #004d6a;
+        --tertiary: #00587c;
+        --on-tertiary: #ffffff;
+        --tertiary-container: #00729e;
+        --on-tertiary-container: #daefff;
+        --error: #ba1a1a;
+        --on-error: #ffffff;
+        --error-container: #ffdad6;
+        --on-error-container: #93000a;
+        --background: #f8f9ff;
+        --on-background: #121c2a;
+        --surface: #f8f9ff;
+        --on-surface: #121c2a;
+        --surface-variant: #d9e3f6;
+        --on-surface-variant: #414751;
+        --outline: #717783;
+        --outline-variant: #c1c7d3;
+        --surface-container-lowest: #ffffff;
+        --surface-container-low: #eff4ff;
+        --surface-container: #e6eeff;
+        --surface-container-high: #dee9fc;
+        --surface-container-highest: #d9e3f6;
+        --surface-dim: #d0dbed;
+        --surface-bright: #f8f9ff;
+        --inverse-surface: #27313f;
+        --inverse-on-surface: #eaf1ff;
+        --inverse-primary: #a3c9ff;
+        
+        --glass-bg: rgba(248, 249, 255, 0.8);
+        --card-border: #e5e7eb;
+        --card-hover-bg: rgba(15, 108, 189, 0.04);
+        --card-active-bg: rgba(15, 108, 189, 0.08);
+      }
+
+      :root.dark {
+        --primary: #38bdf8;
+        --on-primary: #003358;
+        --primary-container: #1e293b;
+        --on-primary-container: #e2e8f0;
+        --secondary: #7bd0ff;
+        --on-secondary: #003549;
+        --secondary-container: #004c69;
+        --on-secondary-container: #c4e7ff;
+        --tertiary: #82cfff;
+        --on-tertiary: #00344b;
+        --tertiary-container: #004c6b;
+        --on-tertiary-container: #c6e7ff;
+        --error: #ffb4ab;
+        --on-error: #690005;
+        --error-container: #93000a;
+        --on-error-container: #ffdad6;
+        --background: #020617;
+        --on-background: #f8fafc;
+        --surface: #0b0f19;
+        --on-surface: #f8fafc;
+        --surface-variant: #1e293b;
+        --on-surface-variant: #94a3b8;
+        --outline: #6b7280;
+        --outline-variant: #374151;
+        --surface-container-lowest: #0f172a;
+        --surface-container-low: #070b13;
+        --surface-container: #172230;
+        --surface-container-high: #1d2c3f;
+        --surface-container-highest: #23354b;
+        --surface-dim: #070b13;
+        --surface-bright: #1f2d3d;
+        --inverse-surface: #f8f9ff;
+        --inverse-on-surface: #121c2a;
+        --inverse-primary: #005396;
+        
+        --glass-bg: rgba(2, 6, 23, 0.8);
+        --card-border: #374151;
+        --card-hover-bg: rgba(56, 189, 248, 0.04);
+        --card-active-bg: rgba(56, 189, 248, 0.08);
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--background);
+        color: var(--on-background);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .glass-header {
+        backdrop-filter: blur(20px);
+        background-color: var(--glass-bg);
+        transition: background-color 0.3s ease;
+      }
+      .premium-gradient {
+        background: linear-gradient(135deg, #0f6cbd 0%, #00aeef 100%);
+      }
+      .option-card {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1.5px solid var(--card-border);
+        background-color: var(--surface-container-lowest);
+      }
+      .option-card:hover {
+        border-color: var(--primary);
+        background-color: var(--card-hover-bg);
+        transform: translateY(-2px);
+      }
+      .option-card.active {
+        border-color: var(--primary);
+        background-color: var(--card-active-bg);
+        box-shadow: 0 4px 12px rgba(15, 108, 189, 0.1);
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      input:focus, select:focus, textarea:focus {
+        outline: none;
+        border-color: #38bdf8 !important;
+        box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+      }
+
+      /* Validation error states & message styling */
+      .field-error-message {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        color: #ba1a1a;
+        min-height: 16px;
+      }
+      .dark .field-error-message {
+        color: #ffb4ab;
+      }
+      input[aria-invalid="true"],
+      select[aria-invalid="true"],
+      textarea[aria-invalid="true"],
+      .option-card[aria-invalid="true"] {
+        border-color: #ba1a1a !important;
+        background-color: rgba(186, 26, 26, 0.02) !important;
+      }
+      .dark input[aria-invalid="true"],
+      .dark select[aria-invalid="true"],
+      .dark textarea[aria-invalid="true"],
+      .dark .option-card[aria-invalid="true"] {
+        border-color: #ffb4ab !important;
+        background-color: rgba(255, 180, 171, 0.02) !important;
+      }
+
+      /* Modal Overlays and Card Styles */
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .modal-overlay.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+      .modal-overlay.hidden {
+        display: none !important;
+      }
+      .modal-card {
+        background-color: #ffffff;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 24px;
+        padding: 48px;
+        max-width: 480px;
+        width: 90%;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        transform: scale(0.95);
+        transition: transform 0.3s ease;
+      }
+      .dark .modal-card {
+        background-color: #1a2636;
+        border-color: rgba(255, 255, 255, 0.08);
+      }
+      .modal-overlay.visible .modal-card {
+        transform: scale(1);
+      }
+      .modal-loader-content,
+      .modal-success-content,
+      .modal-error-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+      .wave-spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        height: 40px;
+      }
+      .wave-bar {
+        width: 4px;
+        height: 24px;
+        background-color: #0f6cbd;
+        border-radius: 999px;
+        animation: waveSplash 1s infinite ease-in-out;
+      }
+      .dark .wave-bar {
+        background-color: #38bdf8;
+      }
+      .wave-bar:nth-child(1) { animation-delay: -1.0s; }
+      .wave-bar:nth-child(2) { animation-delay: -0.9s; }
+      .wave-bar:nth-child(3) { animation-delay: -0.8s; }
+      .wave-bar:nth-child(4) { animation-delay: -0.7s; }
+      .wave-bar:nth-child(5) { animation-delay: -0.6s; }
+
+      @keyframes waveSplash {
+        0%, 40%, 100% { transform: scaleY(0.4); }
+        20% { transform: scaleY(1.1); }
+      }
+      .loading-text {
+        font-weight: 700;
+        color: #121c2a;
+      }
+      .dark .loading-text {
+        color: #f8f9ff;
+      }
+
+      /* Developer Config Warning Box */
+      .warning-box {
+        background-color: #fff5f5;
+        border: 1.5px solid #feb2b2;
+        border-radius: 12px;
+        padding: 16px 24px;
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        text-align: start;
+      }
+      .dark .warning-box {
+        background-color: rgba(186, 26, 26, 0.05);
+        border-color: rgba(186, 26, 26, 0.2);
+      }
+      .warning-icon-wrapper {
+        color: #ba1a1a;
+        flex-shrink: 0;
+      }
+      .dark .warning-icon-wrapper {
+        color: #ffb4ab;
+      }
+      .warning-content h2 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #c53030;
+        margin-bottom: 2px;
+      }
+      .dark .warning-content h2 {
+        color: #fca5a5;
+      }
+      .warning-content p {
+        font-size: 14px;
+        color: #9b2c2c;
+        line-height: 1.5;
+      }
+      .dark .warning-content p {
+        color: #e2e8f0;
+      }
+
+      /* Hide active language switcher buttons */
+      #lang-btn-en.active, #lang-btn-ar.active {
+        display: none !important;
+      }
+
+      /* Submit Button styling */
+      .submit-btn-custom {
+        width: fit-content;
+        height: 48px;
+        padding-left: 32px;
+        padding-right: 32px;
+        border-radius: 12px;
+      }
+      .form-container-watermark {
+        position: relative;
+        overflow: hidden;
+      }
+      .form-container-watermark::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url('assets/images/swimmer-watermark.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 60%;
+        opacity: 0.05;
+        pointer-events: none;
+      }
+    </style>
+</head>
+<body class="selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-header border-b border-outline-variant/30 shadow-sm transition-all duration-300" id="main-header">
+<div class="flex justify-between items-center h-16 px-gutter max-w-container-max mx-auto">
+<!-- Brand -->
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary text-headline-sm md:text-headline-md" data-icon="waves">waves</span>
+<span class="font-bold tracking-tight text-primary text-headline-sm md:text-headline-md" data-i18n="brand_name">Blue Wave Academy</span>
+</div>
+<!-- Actions -->
+<div class="flex items-center gap-xs sm:gap-md">
+<button id="lang-btn-en" class="font-label-md text-label-md font-bold text-primary hover:opacity-80 transition-all lang-switch-btn" data-lang="en" data-i18n-aria-label="aria_lang_en">EN</button>
+<button id="lang-btn-ar" class="font-label-md text-label-md font-bold text-primary hover:opacity-80 transition-all lang-switch-btn" data-lang="ar" data-i18n-aria-label="aria_lang_ar">العربية</button>
+<button id="theme-toggle" class="p-xs rounded-full hover:bg-surface-variant/50 transition-all" aria-checked="false" aria-label="Toggle dark mode" data-i18n-aria-label="aria_theme_toggle">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="dark_mode">dark_mode</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[50vh] flex items-center justify-center px-gutter py-xl bg-background" id="hero">
+<div class="relative z-20 max-w-container-max mx-auto w-full flex flex-col items-center justify-center text-center">
+<div class="max-w-2xl flex flex-col items-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-md leading-tight text-center" data-i18n="hero_title">
+                        Blue Wave Academy – Swimming Registration Form
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-lg leading-relaxed text-center" data-i18n="hero_tagline" style="white-space: pre-line;">
+                        Welcome to Blue Wave Academy
+Please fill in the following information. We will contact you shortly to confirm your registration.
+                    </p>
+<div class="flex justify-center">
+<a class="premium-gradient text-on-primary px-lg py-sm rounded-xl font-label-md text-label-md shadow-xl hover:scale-105 active:scale-95 transition-all text-center" href="#registration" data-i18n="hero_cta">
+                            Register Now
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Registration Section -->
+<section class="py-xl bg-surface-container-low px-gutter" id="registration">
+<div class="max-w-[800px] mx-auto">
+<div class="text-center mb-xl flex flex-col items-center justify-center">
+<img src="assets/images/logo-watermark.png" alt="Blue Wave Academy Logo" class="h-auto object-contain mb-md" style="width: 160px; max-width: 100%;">
+<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-primary mb-sm block" data-i18n="label_enrollment">Enrollment</span>
+<h2 class="font-headline-md text-headline-md mb-xs" data-i18n="label_join">Join the Academy</h2>
+<p class="font-body-md text-body-md text-on-surface-variant" data-i18n="label_join_desc">Complete your registration to secure a professional assessment.</p>
+</div>
+<div class="bg-surface-container-lowest p-md md:p-lg rounded-[32px] shadow-[0px_4px_20px_rgba(0,0,0,0.04)] border border-outline-variant/30 form-container-watermark">
+
+<!-- Developer Script Config Warning (Active when no URL is set) -->
+<div id="dev-warning-box" class="warning-box hidden mb-md" role="alert" aria-live="assertive">
+  <div class="warning-icon-wrapper">
+    <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+      <line x1="12" y1="9" x2="12" y2="13"/>
+      <line x1="12" y1="17" x2="12.01" y2="17"/>
+    </svg>
+  </div>
+  <div class="warning-content">
+    <h2 data-i18n="msg_dev_warning_header">Configuration Required</h2>
+    <p data-i18n="msg_dev_warning_body">The Google Apps Script URL has not been configured in `js/googleSheets.js`. Please set a valid URL to allow form submissions.</p>
+  </div>
+</div>
+
+<form class="space-y-xl" id="registration-form" novalidate>
+<!-- Section 1: Personal -->
+<fieldset class="form-group-fieldset">
+<legend class="flex items-center gap-xs mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="person_outline">person_outline</span>
+<h3 class="font-headline-sm text-headline-sm" data-i18n="section_personal">Personal Information</h3>
+</legend>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs form-field">
+<label for="fullName" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_name">Full Name *</label>
+<input id="fullName" name="fullName" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="Full Name" type="text" required aria-required="true" aria-describedby="error-fullName" data-i18n-placeholder="placeholder_name">
+<div id="error-fullName" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<div class="space-y-xs form-field">
+<label for="age" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_age">Age *</label>
+<input id="age" name="age" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="Age" type="number" min="1" max="120" required aria-required="true" aria-describedby="error-age" data-i18n-placeholder="placeholder_age">
+<div id="error-age" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<div class="space-y-xs form-field">
+<label for="mobileNumber" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_phone">Mobile Number *</label>
+<input id="mobileNumber" name="mobileNumber" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="Mobile Number" type="tel" required aria-required="true" aria-describedby="error-mobileNumber" data-i18n-placeholder="placeholder_phone">
+<div id="error-mobileNumber" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<div class="space-y-xs form-field">
+<label for="whatsAppNumber" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_whatsapp">WhatsApp Number (Optional)</label>
+<input id="whatsAppNumber" name="whatsAppNumber" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="WhatsApp Number (Optional)" type="tel" aria-describedby="error-whatsAppNumber" data-i18n-placeholder="placeholder_whatsapp">
+<div id="error-whatsAppNumber" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+</div>
+</fieldset>
+<!-- Section 2: Training -->
+<fieldset class="form-group-fieldset">
+<legend class="flex items-center gap-xs mb-md">
+<span class="material-symbols-outlined text-primary" data-icon="pool">pool</span>
+<h3 class="font-headline-sm text-headline-sm" data-i18n="section_training">Training Information</h3>
+</legend>
+<div class="space-y-lg">
+<!-- Swimming Level -->
+<div class="space-y-sm form-radio-group" role="radiogroup" aria-required="true" aria-describedby="error-swimmingLevel">
+<label class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_swimming_level">Swimming Level</label>
+<div class="grid grid-cols-1 sm:grid-cols-4 gap-sm">
+<label class="option-card p-sm rounded-xl cursor-pointer text-center flex flex-col items-center gap-xs" onclick="selectOption(this, 'level')">
+<input type="radio" name="swimmingLevel" value="First Time Swimming" class="sr-only" required>
+<span class="material-symbols-outlined text-primary" data-icon="water_drop">water_drop</span>
+<span class="font-label-sm text-label-sm" data-i18n="opt_level_first_time">First Time Swimming</span>
+</label>
+<label class="option-card p-sm rounded-xl cursor-pointer text-center flex flex-col items-center gap-xs" onclick="selectOption(this, 'level')">
+<input type="radio" name="swimmingLevel" value="Beginner" class="sr-only">
+<span class="material-symbols-outlined text-primary" data-icon="waves">waves</span>
+<span class="font-label-sm text-label-sm" data-i18n="opt_level_beginner">Beginner</span>
+</label>
+<label class="option-card p-sm rounded-xl cursor-pointer text-center flex flex-col items-center gap-xs" onclick="selectOption(this, 'level')">
+<input type="radio" name="swimmingLevel" value="Intermediate" class="sr-only">
+<span class="material-symbols-outlined text-primary" data-icon="tide">hide</span>
+<span class="font-label-sm text-label-sm" data-i18n="opt_level_intermediate">Intermediate</span>
+</label>
+<label class="option-card p-sm rounded-xl cursor-pointer text-center flex flex-col items-center gap-xs" onclick="selectOption(this, 'level')">
+<input type="radio" name="swimmingLevel" value="Advanced" class="sr-only">
+<span class="material-symbols-outlined text-primary" data-icon="ocean">oven</span>
+<span class="font-label-sm text-label-sm" data-i18n="opt_level_advanced">Advanced</span>
+</label>
+</div>
+<div id="error-swimmingLevel" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<!-- Training Goal -->
+<div class="space-y-sm form-radio-group" role="radiogroup" aria-required="true" aria-describedby="error-trainingGoal">
+<label class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_training_goal">Training Goal</label>
+<div class="grid grid-cols-1 sm:grid-cols-5 gap-xs sm:gap-sm">
+<label class="option-card px-xs py-sm rounded-lg cursor-pointer text-center flex flex-col items-center justify-center min-h-[44px]" onclick="selectOption(this, 'goal')">
+<input type="radio" name="trainingGoal" value="Learn Swimming" class="sr-only" required>
+<span class="font-label-sm text-label-sm" data-i18n="opt_goal_learn">Learn Swimming</span>
+</label>
+<label class="option-card px-xs py-sm rounded-lg cursor-pointer text-center flex flex-col items-center justify-center min-h-[44px]" onclick="selectOption(this, 'goal')">
+<input type="radio" name="trainingGoal" value="Improve Skills" class="sr-only">
+<span class="font-label-sm text-label-sm" data-i18n="opt_goal_improve">Improve Skills</span>
+</label>
+<label class="option-card px-xs py-sm rounded-lg cursor-pointer text-center flex flex-col items-center justify-center min-h-[44px]" onclick="selectOption(this, 'goal')">
+<input type="radio" name="trainingGoal" value="Prepare for Competitions" class="sr-only">
+<span class="font-label-sm text-label-sm" data-i18n="opt_goal_competition">Prepare for Competitions</span>
+</label>
+<label class="option-card px-xs py-sm rounded-lg cursor-pointer text-center flex flex-col items-center justify-center min-h-[44px]" onclick="selectOption(this, 'goal')">
+<input type="radio" name="trainingGoal" value="Fitness" class="sr-only">
+<span class="font-label-sm text-label-sm" data-i18n="opt_goal_fitness">Fitness</span>
+</label>
+<label class="option-card px-xs py-sm rounded-lg cursor-pointer text-center flex flex-col items-center justify-center min-h-[44px]" onclick="selectOption(this, 'goal')">
+<input type="radio" name="trainingGoal" value="Other" class="sr-only">
+<span class="font-label-sm text-label-sm" data-i18n="opt_goal_other">Other</span>
+</label>
+</div>
+<div id="error-trainingGoal" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<!-- Joined Before Toggle -->
+<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center p-md bg-surface-container-low rounded-2xl border border-outline-variant/20 gap-sm sm:gap-md">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary" data-icon="history">history</span>
+<span class="font-body-md text-body-md font-medium" data-i18n="label_previous_academy">Have you previously joined a swimming academy?</span>
+</div>
+<div class="flex items-center gap-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant font-bold" data-i18n="opt_no">No</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" id="joined-toggle" type="checkbox" name="previousAcademy" value="No">
+<div class="w-11 h-6 bg-outline-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-bold" data-i18n="opt_yes">Yes</span>
+</div>
+</div>
+<!-- Previous Academy (Conditional) -->
+<div class="hidden animate-fade-in space-y-xs form-field w-full" id="previous-academy-field">
+<label for="previousAcademyName" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_prev_academy_name">Previous Swimming Academy (Optional)</label>
+<input id="previousAcademyName" name="previousAcademyName" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="Previous Swimming Academy (Optional)" type="text" aria-describedby="error-previousAcademyName" data-i18n-placeholder="placeholder_prev_academy_name">
+<div id="error-previousAcademyName" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+</div>
+</fieldset>
+<!-- Section 3: Additional -->
+<fieldset class="form-group-fieldset space-y-md">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-primary" data-icon="notes">notes</span>
+<h3 class="font-headline-sm text-headline-sm" data-i18n="section_additional">Additional Information</h3>
+</div>
+<div class="grid grid-cols-1 gap-md">
+<div class="space-y-xs form-field font-body-md w-full">
+<label for="healthIssues" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_health_issues">Are there any medical conditions or injuries the coach should be aware of?</label>
+<textarea id="healthIssues" name="healthIssues" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md resize-none" placeholder="Are there any medical conditions or injuries the coach should be aware of?" rows="3" data-i18n-placeholder="placeholder_health_issues"></textarea>
+<div id="error-healthIssues" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs form-field relative">
+<label for="referralSource" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_referral">How did you hear about Blue Wave Academy?</label>
+<div class="relative">
+  <select id="referralSource" name="referralSource" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md appearance-none pr-10 ltr:pr-10 rtl:pl-10" required aria-required="true" aria-describedby="error-referralSource">
+    <option value="" disabled selected data-i18n="label_referral">How did you hear about Blue Wave Academy?</option>
+    <option value="Facebook" data-i18n="opt_source_facebook">Facebook</option>
+    <option value="Instagram" data-i18n="opt_source_instagram">Instagram</option>
+    <option value="TikTok" data-i18n="opt_source_tiktok">TikTok</option>
+    <option value="Friend" data-i18n="opt_source_friend">Friend</option>
+    <option value="WhatsApp" data-i18n="opt_source_whatsapp">WhatsApp</option>
+    <option value="Other" data-i18n="opt_source_other">Other</option>
+  </select>
+  <div class="pointer-events-none absolute inset-y-0 right-0 ltr:right-0 rtl:left-0 flex items-center px-3 text-on-surface-variant">
+    <span class="material-symbols-outlined text-[20px]">keyboard_arrow_down</span>
+  </div>
+</div>
+<div id="error-referralSource" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+<div class="space-y-xs form-field">
+<label for="notes" class="font-label-md text-label-md text-on-surface-variant px-base" data-i18n="label_notes">Any notes or questions?</label>
+<input id="notes" name="notes" class="w-full bg-surface border-1.5 border-outline-variant/50 rounded-xl px-md py-sm font-body-md" placeholder="Any notes or questions?" type="text" data-i18n-placeholder="placeholder_notes" aria-describedby="error-notes">
+<div id="error-notes" class="field-error-message text-error text-xs font-medium px-base mt-1" role="alert" aria-live="polite"></div>
+</div>
+</div>
+</div>
+</fieldset>
+<div class="flex justify-center w-full">
+<button id="submit-btn" class="premium-gradient text-on-primary font-label-md text-label-md hover:translate-y-[-2px] hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-sm submit-btn-custom" type="submit">
+                            <span data-i18n="btn_submit">Submit Registration</span>
+                            <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-lowest border-t border-outline-variant/20 py-xl">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter max-w-container-max mx-auto gap-md">
+<div class="text-center md:text-left">
+<div class="flex items-center gap-xs mb-xs justify-center md:justify-start">
+<span class="material-symbols-outlined text-primary text-headline-sm" data-icon="waves">waves</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary" data-i18n="brand_name">Blue Wave Academy</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs" data-i18n="footer_desc">Precision in every stroke. Elite aquatic training for technical mastery.</p>
+</div>
+<div class="flex gap-lg">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-all hover:translate-y-[-2px]" href="#" data-i18n="footer_privacy">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-all hover:translate-y-[-2px]" href="#" data-i18n="footer_terms">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-secondary transition-all hover:translate-y-[-2px]" href="#" data-i18n="footer_faq">FAQ</a>
+</div>
+<p class="font-label-sm text-label-sm text-outline" data-i18n="footer_copyright">© 2024 Blue Wave Academy.</p>
+</div>
+</footer>
+
+<!-- Modal Overlays (Status Loading Spinner and Success/Error Overlay) -->
+<div id="status-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-describedby="modal-body-desc">
+  <div class="modal-card">
+    <div id="modal-loader" class="modal-loader-content hidden">
+      <div class="wave-spinner">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+      </div>
+      <p class="loading-text" data-i18n="text_loading" id="modal-body-desc">Processing your registration...</p>
+    </div>
+
+    <div id="modal-success" class="modal-success-content hidden">
+      <div class="success-icon-wrapper" style="color: var(--primary);">
+        <svg class="success-checkmark text-primary" viewBox="0 0 24 24" width="64" height="64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <h2 data-i18n="msg_success_header" class="font-headline-md text-headline-md font-bold mb-xs">Thank you for registering at Blue Wave Academy.</h2>
+      <p data-i18n="msg_success_body" class="font-body-md text-body-md text-on-surface-variant mb-md">We will contact you shortly to confirm your registration and schedule your training session.</p>
+      <button type="button" class="modal-close-btn font-label-md text-label-md font-bold text-on-primary premium-gradient px-lg py-sm rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all" data-i18n="btn_close">Close</button>
+    </div>
+
+    <div id="modal-error" class="modal-error-content hidden">
+      <div class="warning-icon-wrapper" style="color: var(--error);">
+        <svg class="error-cross text-error" viewBox="0 0 24 24" width="64" height="64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="15" y1="9" x2="9" y2="15"/>
+          <line x1="9" y1="9" x2="15" y2="15"/>
+        </svg>
+      </div>
+      <h2 class="font-headline-md text-headline-md font-bold mb-xs" data-i18n="msg_dev_warning_header">Configuration Required</h2>
+      <p class="font-body-md text-body-md text-on-surface-variant mb-md" id="modal-error-text" data-i18n="msg_dev_warning_body">The Google Apps Script URL has not been configured in `js/googleSheets.js`.</p>
+      <button type="button" class="modal-close-btn font-label-md text-label-md font-bold text-on-primary premium-gradient px-lg py-sm rounded-xl shadow-lg hover:scale-105 active:scale-95 transition-all" data-i18n="btn_close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modular Scripts Loaded Sequentially -->
+<script src="js/translations.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/language.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/googleSheets.js"></script>
+<script src="js/app.js"></script>
+<script>
+        // Selection Cards override to sync standard radio input check on click
+        function selectOption(element, group) {
+            const cards = element.parentElement.querySelectorAll('.option-card');
+            cards.forEach(card => card.classList.remove('active'));
+            element.classList.add('active');
+
+            const input = element.querySelector('input[type="radio"]');
+            if (input) {
+                input.checked = true;
+                input.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+        }
+
+        // Toggle Academy Field
+        function toggleAcademyField() {
+            const toggle = document.getElementById('joined-toggle');
+            const field = document.getElementById('previous-academy-field');
+            if (toggle.checked) {
+                field.classList.remove('hidden');
+                field.classList.add('block');
+            } else {
+                field.classList.add('hidden');
+                field.classList.remove('block');
+            }
+        }
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('main-header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md', 'py-1');
+                header.classList.remove('shadow-sm', 'py-0');
+            } else {
+                header.classList.remove('shadow-md', 'py-1');
+                header.classList.add('shadow-sm', 'py-0');
+            }
+        });
+    </script>
+
+</body></html>
